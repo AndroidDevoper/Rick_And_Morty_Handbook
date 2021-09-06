@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.characters.FragmentCharacter">
+
+    <TextView
+        android:id="@+id/fragment_character_tv_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Gender: "
+        app:layout_constraintStart_toStartOf="@+id/fragment_character_tv_status"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_character_tv_status" />
+
+    <TextView
+        android:id="@+id/fragment_character_tv_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Status:"
+        app:layout_constraintStart_toStartOf="@+id/fragment_character_tv_species"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_character_tv_species" />
+
+    <TextView
+        android:id="@+id/fragment_character_tv_species"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Species:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.363"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_character_img" />
+
+    <TextView
+        android:id="@+id/fragment_character_tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Text"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.277" />
+
+    <ImageView
+        android:id="@+id/fragment_character_img"
+        android:layout_width="300px"
+        android:layout_height="300px"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_character_tv_name"
+        tools:src="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/fragment_character_tv_isSpecies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:text="TextView"
+        android:textColor="#000000"
+        app:layout_constraintStart_toEndOf="@+id/fragment_character_tv_species"
+        app:layout_constraintTop_toTopOf="@+id/fragment_character_tv_species" />
+
+    <TextView
+        android:id="@+id/fragment_character_tv_isStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="#050000"
+        app:layout_constraintStart_toStartOf="@+id/fragment_character_tv_isSpecies"
+        app:layout_constraintTop_toTopOf="@+id/fragment_character_tv_status" />
+
+    <TextView
+        android:id="@+id/fragment_character_tv_isGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="#070000"
+        app:layout_constraintStart_toStartOf="@+id/fragment_character_tv_isStatus"
+        app:layout_constraintTop_toTopOf="@+id/fragment_character_tv_gender" />
+
+    <TextView
+        android:id="@+id/fragment_character_tv_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Location:"
+        app:layout_constraintStart_toStartOf="@+id/fragment_character_tv_gender"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_character_tv_gender" />
+
+    <TextView
+        android:id="@+id/fragment_character_tv_isLocation"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="@+id/fragment_character_tv_isGender"
+        app:layout_constraintTop_toTopOf="@+id/fragment_character_tv_location" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
